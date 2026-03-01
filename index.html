@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineScope Reviews</title>
-    <link rel="stylesheet" href="style.css">
-     <!-- Bootstrap CSS (Used ONLY for Image Slider) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap First -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Then Your CSS -->
+<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -27,8 +29,8 @@
 <!-- Internal Links -->
 <div class="nav-links">
     <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact Us</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact Us</a>
 
     <!-- External Link -->
     <a href="http://www.themoviedb.org/" target="_blank" >The Movie Database</a>
@@ -36,9 +38,6 @@
 </div>
 
     </div>
-
-<!-- //* Introduction Of the project  -->
-
 
 
 <!-- //* Introduction Of the project  -->
@@ -49,6 +48,174 @@
         different movie categories, view trending content, and discover popular films.
         This project demonstrates HTML and CSS fundamentals.
     </p>
+    
 </div>
+
+<!-- Image Slider -->
+
+
+<div class="container">
+
+    <!-- <div id="movieSlider" class="carousel slide" data-bs-ride="carousel"> -->
+        <div id="movieSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="movie1st.png" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="joker.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="movie3rd.png" class="d-block w-100">
+            </div>
+            <!-- <div class="carousel-item">
+                <img src="5.jpg" class="d-block w-100">
+            </div> -->
+            <div class="carousel-item">
+                <img src="ghost.png" class="d-block w-100">
+            </div>
+            <!-- <div class="carousel-item">
+                <img src="8.jpg" class="d-block w-100">
+            </div> -->
+
+           
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#movieSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#movieSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- //* Table for Movie Category -->
+
+<div class="container">
+    <h2 style="color:#E50914;">Movie Categories</h2>
+
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Popularity</th>
+        </tr>
+
+        <tr>
+            <td>Action</td>
+            <td>Fight and adventure based movies</td>
+            <td>High</td>
+        </tr>
+
+        <tr>
+            <td>Thriller</td>
+            <td>Suspense and psychological drama</td>
+            <td>Very High</td>
+        </tr>
+
+        <tr>
+            <td>Adventure</td>
+            <td>Journey and exploration movies</td>
+            <td>Medium</td>
+        </tr>
+    </table>
+</div>
+
+<!-- BlockQuote  -->
+
+<div class="container">
+    <blockquote>
+        "Cinema is a mirror by which we often see ourselves." - Alejandro González Iñárritu
+    </blockquote>
+</div>
+
+<!-- About Section -->
+
+<div id="about" class="container">
+    <h2 style="color: #E50914;" >About Us</h2>
+    <p>CineScope Reviews is a platform dedicated to providing insightful movie reviews and ratings. Our team of film enthusiasts and critics strive to deliver accurate and engaging content to help you discover your next favorite film.</p>
+</div>
+
+<!-- Contact Us -->
+
+<div id="contact" class="container">
+    <h2 style="color: #E50914;">Contact Us</h2>
+    <p>Email : contact@cinescope.com</p>
+</div>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+            <h3>CineScope Reviews</h3>
+            <p>Your trusted platform for movie reviews and ratings.</p>
+        </div>
+
+        <!-- Footer Columns -->
+        <div class="footer-columns">
+
+            <div class="footer-box">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blockbuster</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Watchlist</a></li>
+                    <li><a href="#">User Profile</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📞 +92 300 1234567</li>
+                    <li>✉ support@cinescope.com</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+        <p>© 2026 CineScope Reviews. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
