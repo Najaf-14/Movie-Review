@@ -97,7 +97,6 @@ td {
     color: #f5c518;
 }
 
-
 blockquote {
   border-left: 5px solid #e50914;
   padding-left: 15px;
@@ -110,13 +109,11 @@ blockquote {
   color: #ccc;
 }
 
-/* Main Container */
 .footer-container {
   width: 90%;
   margin: auto;
 }
 
-/* Brand Section */
 .footer-brand {
   margin-bottom: 30px;
 }
