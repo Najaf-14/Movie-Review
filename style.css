@@ -1,145 +1,153 @@
-         
-         
-         body {
-            background-color: #0F0F0F;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
+body {
+  background-color: #0f0f0f;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
 
-       
-        .page-title {
-            text-align: center;
-            background-color: #000;
-            padding: 15px;
-            font-size: 30px;
-            font-weight: bold;
-            color: #E50914;
-        }
+.page-title {
+  text-align: center;
+  background-color: #000;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #e50914;
+}
 
-        
-        .navbar-custom {
-            background-color: #141414;
-            padding: 10px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+.navbar-custom {
+  background-color: #141414;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-        .logo img {
-            height: 90px;
-        }
+.logo img {
+  height: 50px;
+}
 
-        .nav-links a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-        }
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
 
-        .nav-links a:hover {
-            color: #E50914;
-        }
+#profile-icon{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#profile-icon:hover{
+    color: red;
+    transition: 0.5s ease;
+    transform: scale(1.5);
+}
 
-        .container {
-            width: 90%;
-            margin: auto;
-            padding: 40px 0;
-        }
+.nav-links a:hover {
+  color: white;
+  background-color: red;
+  padding: 18px;
+  border-radius: 8px;
+  transition: 0.4s;
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background-color: #141414;
-        }
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
 
-        table, th, td {
-            border: 1px solid #444;
-        }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #141414;
+}
 
-        th {
-            background-color: #E50914;
-        }
+table,
+th,
+td {
+  border: 1px solid #444;
+}
 
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
+th {
+  background-color: #e50914;
+}
 
-        blockquote {
-            border-left: 5px solid #E50914;
-            padding-left: 15px;
-            font-style: italic;
-            color: #B3B3B3;
-        }
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
 
- .footer {
-    background-color: #000;
-    padding: 50px 0 0 0;
-    color: #ccc;
+blockquote {
+  border-left: 5px solid #e50914;
+  padding-left: 15px;
+  font-style: italic;
+  color: #b3b3b3;
+}
+.footer {
+  background-color: #000;
+  padding: 50px 0 0 0;
+  color: #ccc;
 }
 
 /* Main Container */
 .footer-container {
-    width: 90%;
-    margin: auto;
+  width: 90%;
+  margin: auto;
 }
 
 /* Brand Section */
 .footer-brand {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .footer-brand h3 {
-    color: #E50914;
-    margin-bottom: 10px;
+  color: #e50914;
+  margin-bottom: 10px;
 }
 
-/* Columns Wrapper */
 .footer-columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Each Column */
 .footer-box {
-    width: 200px;
-    margin-bottom: 30px;
+  width: 200px;
+  margin-bottom: 30px;
 }
 
 .footer-box h4 {
-    color: #E50914;
-    margin-bottom: 15px;
+  color: #e50914;
+  margin-bottom: 15px;
 }
 
-/* Remove default UL styling ONLY inside footer , before ye global thi */
 .footer-box ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-box ul li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
-/* Links */
 .footer-box a {
-    text-decoration: none;
-    color: #ccc;
-    font-size: 14px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
 }
 
 .footer-box a:hover {
-    color: #E50914;
+  color: #e50914;
 }
 
-/* Bottom */
 .footer-bottom {
-    text-align: center;
-    padding: 20px 0;
-    border-top: 1px solid #222;
-    margin-top: 20px;
-    font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #222;
+  margin-top: 20px;
+  font-size: 14px;
 }
