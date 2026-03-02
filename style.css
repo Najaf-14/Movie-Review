@@ -44,11 +44,11 @@ body {
 }
 
 .nav-links a:hover {
-  color: white;
   background-color: red;
-  padding: 18px;
+  padding: 6px;
   border-radius: 8px;
-  transition: 0.4s;
+  transition: 0.2s;
+  
 }
 
 .container {
