@@ -24,18 +24,21 @@
 
     <div class="navbar-custom">
 
-        <div class="logo">
-            <img src="logo/logo.png" alt="CineScope Logo">
+        <div class="navbar-header">
+            <div class="logo">
+                <img src="logo/logo.png" alt="CineScope Logo">
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
 
         <!-- Navigation Links -->
-        <!-- Internal Links -->
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
             <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact Us</a>
-
-            <!-- External Link -->
             <a href="http://www.themoviedb.org/" target="_blank">The Movie Database</a>
             <a href="http://www.github.com/SaadQasim19/" target="_blank">GitHub Profile</a>
             <i id="profile-icon" class="fa-solid fa-circle-user"></i>
@@ -284,6 +287,67 @@
     </footer>
 
     <script>
+        // ========== MOBILE MENU TOGGLE ==========
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        if (mobileMenuToggle && navLinks) {
+            // Ensure menu is closed on page load for mobile
+            if (window.innerWidth <= 768) {
+                navLinks.classList.remove('active');
+            }
+
+            mobileMenuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+
+                // Change icon between bars and times (X)
+                const icon = this.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Close menu when clicking on a link
+            const navLinksItems = navLinks.querySelectorAll('a');
+            navLinksItems.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        navLinks.classList.remove('active');
+                        const icon = mobileMenuToggle.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const isClickInsideNav = navLinks.contains(event.target);
+                const isClickOnToggle = mobileMenuToggle.contains(event.target);
+
+                if (!isClickInsideNav && !isClickOnToggle && navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    const icon = mobileMenuToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Close menu on window resize if entering desktop mode
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    navLinks.classList.remove('active');
+                    const icon = mobileMenuToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
+
         // ========== CONFIGURATION ==========
         // 🔧 TODO: Replace these with your actual API endpoints
         const API_CONFIG = {
